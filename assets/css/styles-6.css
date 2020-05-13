@@ -33,7 +33,7 @@ a {
   -o-transition: all 0.4s ease-in-out;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: underline dotted;
   color: #10171a;
 }
 a:focus {
