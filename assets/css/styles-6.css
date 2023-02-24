@@ -10,7 +10,7 @@
 /* ======= Base ======= */
 body {
   font-family: 'Roboto', sans-serif;
-  color: #626262;
+  color: #626262 !important;
   background: #f5f5f5;
   font-size: 14px;
   padding: 30px;
@@ -26,7 +26,7 @@ h6 {
   font-weight: 700;
 }
 a {
-  color: #000000;
+  color: #000000 !important;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -34,7 +34,7 @@ a {
 }
 a:hover {
   text-decoration: underline dotted;
-  color: #10171a;
+  color: #10171a !important;
 }
 a:focus {
   text-decoration: none;
@@ -52,22 +52,22 @@ p {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 .sidebar-wrapper {
-  background: rgb(55, 96, 146);
+  background: rgb(55, 96, 146) !important;
   position: absolute;
   right: 0;
   width: 240px;
   height: 100%;
   min-height: 800px;
-  color: #fff;
+  color: #fff !important;
 }
 .sidebar-wrapper a {
-  color: #fff;
+  color: #fff !important;
 }
 .sidebar-wrapper .profile-container {
   padding: 30px;
-  background: rgb(23, 55, 94);
+  background: rgb(23, 55, 94) !important;
   text-align: center;
-  color: #fff;
+  color: #fff !important;
 }
 .sidebar-wrapper .name {
   font-size: 32px;
@@ -76,7 +76,7 @@ p {
   margin-bottom: 10px;
 }
 .sidebar-wrapper .tagline {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6) !important;
   font-size: 16px;
   font-weight: 400;
   margin-top: 0;
@@ -121,19 +121,19 @@ p {
   margin-bottom: 0;
 }
 .sidebar-wrapper .education-container .meta {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6) !important;
   font-weight: 500;
   margin-bottom: 3px;
   margin-top: 0;
 }
 .sidebar-wrapper .education-container .time {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6) !important;
   font-weight: 500;
   font-size: 13px;
   margin-bottom: 3px;
 }
 .sidebar-wrapper .languages-container .lang-desc {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6) !important;
 }
 .sidebar-wrapper .languages-list {
   margin-bottom: 0;
@@ -157,13 +157,13 @@ p {
   background: #fff;
   padding: 60px;
   padding-right: 300px;
-  page-break-before: always;
+  /* page-break-before: always; */
 }
 .main-wrapper .section-title {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 500;
-  color: rgb(32, 121, 199);
+  color: rgb(32, 121, 199) !important;
   position: relative;
   margin-top: 0;
   margin-bottom: 20px;
@@ -173,7 +173,7 @@ p {
   height: 30px;
   margin-right: 8px;
   display: inline-block;
-  color: #fff;
+  color: #fff !important;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -210,7 +210,7 @@ p {
   margin-bottom: 2px;
 }
 .main-wrapper .job-title {
-  color: #0e2029;
+  color: #0e2029 !important;
   font-size: 16px;
   margin-top: 0;
   margin-bottom: 0;
@@ -225,7 +225,7 @@ p {
   margin-top: 0px;
 }
 .main-wrapper .time {
-  color: #626262;
+  color: #626262 !important;
   align-self: right;
   position: relative;
   text-transform: uppercase;
@@ -234,31 +234,31 @@ p {
 }
 .main-wrapper .company {
   margin-bottom: 10px;
-  color: #0e2029;
+  color: #0e2029 !important;
 }
 .main-wrapper .project-title {
-  color: #0e2029;
+  color: #0e2029 !important;
   display: inline-block;
   font-weight: 900;
 }
 .main-wrapper .project-tagline {
-  color: #0e2029;
+  color: #0e2029 !important;
   display: inline-block;
 }
 .main-wrapper .project-tagline:before {
   content: " — ";
 }
 .main-wrapper .project-url {
-  color: #97AAC3;
+  color: #97AAC3 !important;
   display: block;
   font-size: 12px;
 }
 .main-wrapper .project-url > a {
-  color: #626262;
+  color: #626262 !important;
 }
 
 .main-wrapper .projects-section .intro {
-  color: #97AAC3;
+  color: #97AAC3 !important;
   margin-bottom: 10px;
 }
 .main-wrapper .projects-section .item {
@@ -291,14 +291,14 @@ p {
 }
 .footer .copyright {
   line-height: 1.6;
-  color: #545E6C;
+  color: #545E6C !important;
   font-size: 13px;
 }
 .footer .fa-heart {
-  color: #fb866a;
+  color: #fb866a !important;
 }
 /* Extra small devices (phones, less than 768px) */
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .sidebar-wrapper {
     position: static;
     width: inherit;
@@ -317,7 +317,7 @@ p {
 }
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media screen and (min-width: 992px), print {
   .skillset .level-title {
     display: inline-block;
     float: left;
@@ -334,3 +334,35 @@ p {
 }
 /* Large devices (large desktops, 1200px and up) */
 /* Ex-Large devices (large desktops, 1200px and up) */
+
+@media print {
+  body {
+    padding: 0px;
+  }
+  .wrapper {
+    background: #fff;
+    max-width: 100%;
+  }
+  .name {
+    color: #fff !important;
+  }
+  a[href]:after {
+    content: none !important;
+  }
+  .fa, ::before, .container-block-title, .degree, .interests-list li {
+    color: #fff !important;
+  }
+  .main-wrapper .fa {
+    background-color: rgb(32, 121, 199) !important;
+    display: inline-block;
+    text-align: center;
+    color: #fff !important;
+  }
+  .fa.fa-heart::before {
+    color: rgb(251, 134, 106) !important;
+  }
+
+  .projects-section {
+    padding-top: 60px;
+  }
+}
